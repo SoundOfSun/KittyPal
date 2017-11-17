@@ -1,1 +1,33 @@
 // Specific CSS for your home-page
+.home-section-1 {
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+
+  h1 {
+    font-size: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  /* Line on each side of the title */
+  h1:before,
+  h1:after {
+   background-color: $l-grey;
+   content: "";
+   display: inline-block;
+   height: 1px;
+   position: relative;
+   vertical-align: middle;
+   width: 50%;
+  }
+  h1:before {
+   right: 0.5em;
+   margin-left: -50%;
+  }
+  h1:after {
+   left: 0.5em;
+   margin-right: -50%;
+  }
+}
