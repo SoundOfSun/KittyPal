@@ -1,0 +1,36 @@
+<div class="navbar">
+  <div id="logo">
+    <%= link_to root_path do %>
+    <p>
+      <i class="fa fa-paw" aria-hidden="true"></i> KittyPal
+    </p>
+    <% end %>
+  </div>
+  <!-- Right navigation -->
+  <div class="navbar-content hidden-xs hidden-sm">
+    <a href="#" class="nav-link">about</a>
+    <a href="#" class="nav-link">features</a>
+    <a href="#" class="nav-link">nutrition</a>
+    <a href="#" class="nav-btn">tend to a cat</a>
+  </div>
+  <!-- Right navigation on mobile -->
+  <div class="navbar-dropdown hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> about</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> features</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> nutrition</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-paw" aria-hidden="true"></i> tend to a cat</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

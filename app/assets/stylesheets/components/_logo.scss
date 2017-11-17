@@ -1,0 +1,18 @@
+#logo p {
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+#logo a {
+  color: $white;
+  text-decoration: none;
+  font-size: 24px;
+
+  &:link, &:hover, &:focus, &:active, &:visited {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $white;
+  }
+}
