@@ -64,7 +64,91 @@
 </div>
 <!-- 2nd SECTION : Customer testimonies (carousel) -->
 <div class="home-section-2">
-
+  <h1>They love it !</h1>
+  <div class="carousel">
+    <div class="carousel-center">
+      <div class="testimony">
+        <p class="testimony-text">"I was skeptic at first, but when I tried KittyPal the first time, my life completely changed ! I'm a better person now, and caring for cats has reduced how stressed I usually feel."</p>
+        <div class="line-separator">
+          <div class="side-line"></div>
+          <div class="triangle"></div>
+          <div class="side-line"></div>
+        </div>
+        <p class="testimony-author"><strong>Lisa</strong>, University student.</p>
+      </div>
+      <div class="testimony">
+        <p class="testimony-text">"I was skeptic at first, but when I tried KittyPal the first time, my life completely changed ! I'm a better person now, and caring for cats has reduced how stressed I usually feel."</p>
+        <div class="line-separator">
+          <div class="side-line"></div>
+          <div class="triangle"></div>
+          <div class="side-line"></div>
+        </div>
+        <p class="testimony-author"><strong>Lisa</strong>, University student.</p>
+      </div>
+      <div class="testimony">
+        <p class="testimony-text">"I was skeptic at first, but when I tried KittyPal the first time, my life completely changed ! I'm a better person now, and caring for cats has reduced how stressed I usually feel."</p>
+        <div class="line-separator">
+          <div class="side-line"></div>
+          <div class="triangle"></div>
+          <div class="side-line"></div>
+        </div>
+        <p class="testimony-author"><strong>Lisa</strong>, University student.</p>
+      </div>
+      <div class="testimony">
+        <p class="testimony-text">"I was skeptic at first, but when I tried KittyPal the first time, my life completely changed ! I'm a better person now, and caring for cats has reduced how stressed I usually feel."</p>
+        <div class="line-separator">
+          <div class="side-line"></div>
+          <div class="triangle"></div>
+          <div class="side-line"></div>
+        </div>
+        <p class="testimony-author"><strong>Lisa</strong>, University student.</p>
+      </div>
+      <div class="testimony">
+        <p class="testimony-text">"I was skeptic at first, but when I tried KittyPal the first time, my life completely changed ! I'm a better person now, and caring for cats has reduced how stressed I usually feel."</p>
+        <div class="line-separator">
+          <div class="side-line"></div>
+          <div class="triangle"></div>
+          <div class="side-line"></div>
+        </div>
+        <p class="testimony-author"><strong>Lisa</strong>, University student.</p>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- 3rd SECTION : Appeal, try today (3 trending) -->
 <!-- FOOTER -->
+<!-- JavaScript : To be moved to JS files -->
+<%= content_for :after_js do %>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel-center').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        centerMode: true,
+        centerPadding: '100px',
+        slidesToShow: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+<% end %>
