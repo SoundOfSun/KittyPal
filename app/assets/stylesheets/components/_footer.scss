@@ -1,0 +1,66 @@
+/* Main footer */
+.footer {
+  height: 100px;
+  padding: 0 70px;
+  color: $grey;
+  background: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left section */
+.foot-text {
+  font-size: 14px;
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: $grey;
+    font-weight: 900;
+    text-decoration: none;
+
+    &:link, &:hover, &:active, &:focus, &:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: $red;
+    }
+
+    &:visited {
+      text-decoration: $grey;
+    }
+  }
+}
+
+/* Right section */
+.foot-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Footer link */
+.foot-link a {
+  color: $grey;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:link, &:hover, &:active, &:focus, &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $red!important;
+  }
+
+  &:visited {
+    color: $grey;
+  }
+}
