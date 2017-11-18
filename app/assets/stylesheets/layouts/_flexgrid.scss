@@ -1,5 +1,5 @@
-/* Flex grid on the Home Page */
-.features {
+/* Flex grids on the Home Page */
+.features, .offers {
   display: flex;
   flex-wrap: wrap;
   padding-top: 30px;
@@ -9,6 +9,8 @@
   flex: 0 0 30%;
   padding: 0 10px;
 }
+
+/* Style for features (section 1) */
 .feature-header {
   display: flex;
   align-items: center;
@@ -28,4 +30,47 @@
 .feature-body p {
   font-size: 18px;
   font-weight: 300;
+}
+
+/* Style for offers (section 3) */
+.offers {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.offer {
+  flex: 0 0 30%;
+  padding: 0 5px;
+}
+.offer-header {
+  height: 360px;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+}
+.offer-1 {
+  background-image: url('cat-1.jpg');
+}
+.offer-2 {
+  background-image: url('cat-2.jpeg');
+}
+.offer-3 {
+  background-image: url('cat-3.jpeg');
+}
+.offer-body {
+  h2 {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  p.price {
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
 }

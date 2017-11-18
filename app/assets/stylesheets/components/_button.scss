@@ -22,3 +22,27 @@ a.nav-btn {
     color: $white;
   }
 }
+
+/* Reversed button */
+a.offer-btn {
+  color: $d-grey;
+  font-size: 18px;
+  font-weight: 300;
+  border: 1px solid $d-grey;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-transform: capitalize;
+
+  &:link, &:hover, &:active, &:focus, &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $d-grey;
+    color: $white!important;
+  }
+
+  &:visited {
+    color: $d-grey;
+  }
+}

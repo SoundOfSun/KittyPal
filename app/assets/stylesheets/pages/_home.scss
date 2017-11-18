@@ -68,16 +68,6 @@
     text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
   }
 }
-.carousel {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 60px;
-}
-.carousel-center {
-  width: 70%;
-  height: auto;
-}
 .testimony {
   height: 300px!important;
   width: 400px;
@@ -100,22 +90,17 @@
     padding-top: 15px;
   }
 }
-/* TEST - Triangle */
-.side-line {
-  display: inline-block;
-  border-top: 1px solid $l-grey;
-  width: 45%;
-}
 
-.triangle {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  transform: rotate(225deg);
-  transform-origin: center center;
-  border-top: 1px solid $l-grey;
-  border-left: 1px solid $l-grey;
-  margin-left: -1px;
-  margin-right: -1px;
-  margin-bottom: -10px;
+/* SECTION 3 */
+.home-section-3 {
+  width: 100%;
+  height: auto;
+  padding: 20px 15px;
+  padding-bottom: 40px;
+
+  h1 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 300;
+  }
 }
